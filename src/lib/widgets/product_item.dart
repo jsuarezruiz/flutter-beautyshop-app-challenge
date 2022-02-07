@@ -29,7 +29,7 @@ class ProductItem extends StatelessWidget {
               Expanded(
                 child: Image(
                   fit: BoxFit.fill,
-                  image: AssetImage(product.image!),
+                  image: AssetImage(product.image),
                 ),
               ),
               Align(
@@ -37,7 +37,7 @@ class ProductItem extends StatelessWidget {
                 child: Padding(
                   padding: const EdgeInsets.only(left: 20.0),
                   child: Text(
-                    product.name!,
+                    product.name,
                     style: const TextStyle(
                       fontSize: 13,
                       fontFamily: 'Falling Sky',
@@ -53,7 +53,7 @@ class ProductItem extends StatelessWidget {
                     top: 4.0,
                     left: 20.0,
                   ),
-                  child: Text(product.description!,
+                  child: Text(product.description,
                       style: const TextStyle(
                         fontSize: 11,
                         fontFamily: 'Falling Sky Light',
@@ -74,7 +74,7 @@ class ProductItem extends StatelessWidget {
                       alignment: Alignment.centerLeft,
                       child: Padding(
                         padding: const EdgeInsets.only(top: 5.0, left: 20.0),
-                        child: Text("\$${product.price!}",
+                        child: Text("\$${product.price}",
                             style: const TextStyle(
                               fontSize: 15,
                               fontFamily: 'Falling Sky',
